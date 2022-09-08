@@ -1,4 +1,4 @@
-// Show off github repos
+// Show off github repos - target overview, supply username, obtain repo
 const overview = document.querySelector(".overview");
 const username = "Frosty8104";
 const list = document.querySelector(".repo-list");
@@ -41,7 +41,7 @@ const displayRepos = function(repos) {
 list.addEventListener = ("click", function (e) {
     if (e.target.matches("h3")) {
         const repoName = e.target.innerText;
-        getRepoInfo(repoName);
+        specRepo(repoName);
     }
 });
 // Fetch and display individual repository data
