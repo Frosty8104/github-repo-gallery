@@ -38,7 +38,7 @@ const displayRepos = function(repos) {
     }
 };
 // Add button to display fetched data
-list.addEventListener = ("click", function (e) {
+list.addEventListener ("click", function (e) {
     if (e.target.matches("h3")) {
         const repoName = e.target.innerText;
         specRepo(repoName);
